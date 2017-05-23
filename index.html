@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <meta charset="utf-8">
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Find the Weather</h1>
+      <label for="city">Enter a city:</label>
+      <input type="text" name="city" id="city">
+      <button id="find-weather" class="btn">Enter</button>
+      <p class="showWeather"></p>
+
+      <div class="form-check">
+        <label class="form-check-label" for="temp-type">
+          <input type="radio" name="temp-type" class="temp-type" value="fahrenheit">
+          Fahrenheit
+        </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label" for="temp-type">
+          <input type="radio" name="temp-type" class="temp-type" value="celsius">
+          Celsius
+        </label>
+      </div>
+      <button id="find-temperature" class="btn">Enter</button>
+    </div>
+    <p class="showTemperature"></p>
+  </body>
+</html>
